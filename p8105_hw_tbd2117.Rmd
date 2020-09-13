@@ -51,12 +51,13 @@ as.numeric(as.factor(logic)) * samp
 ```{r}
 # loading the penguins dataset
 data("penguins", package = "palmerpenguins")
-y= as.numeric(penguins$flipper_length_mm)
 ````
 
-The _penguins_ dataset contains data on penguin species (`r levels(penguins$species)`), islands (`r levels(penguins$island)`), length of bills and flippers, body mass, sex, and year. 
+The _penguins_ dataset contains data on penguin species (`r levels(penguins$species)`), islands (`r levels(penguins$island)`), length of bills and flippers, body mass, sex, and year.
+
 The dataset has `r nrow(penguins)` rows and `r ncol(penguins)` columns. 
-The mean flipper length is `r mean(y) `.
+
+The mean flipper length is `r mean(penguins$flipper_length_mm, na.rm=TRUE)`.
 
 ```{r message=FALSE}
 # calling library
