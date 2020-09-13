@@ -2,5 +2,5 @@
 title: "p8105_h1_tbd2117"
 author: "Thiago de Araujo"
 date: "9/13/2020"
-output: html_document
+output: github_document
 ---
