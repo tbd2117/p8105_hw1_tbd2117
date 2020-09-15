@@ -12,7 +12,7 @@ library(tidyverse)
 
 Here's the first code chunk to create the requested **dataframe** and its **means**:
 
-```{r}
+```{r chunk1}
 prob1 = 
   tibble(
     samp = rnorm(10),
